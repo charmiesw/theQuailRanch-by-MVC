@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="1024.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.theQuailRanch.controller.LoginFormController">
+   <ImageView fitHeight="1024.0" fitWidth="1440.0" layoutX="1440.0" layoutY="1024.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <image>
+         <Image url="@../images/pages/LoginLogin.png" />
+      </image>
+   </ImageView>
+   <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="154.0" layoutY="715.0" onAction="#btnLoginOnAction" prefHeight="60.0" prefWidth="610.0" style="-fx-background-color: #d3b688;" text="LOGIN" textFill="#835c21">
+      <font>
+         <Font name="DejaVu Sans Bold" size="26.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <Blend />
+      </effect>
+   </JFXButton>
+   <ImageView disable="true" fitHeight="45.0" fitWidth="49.0" focusTraversable="true" layoutX="165.0" layoutY="333.0" opacity="0.5" preserveRatio="true">
+      <Image url="@../images/icons/user.png" />
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <viewport>
+         <Rectangle2D minX="10.0" />
+      </viewport>
+   </ImageView>
+   <ImageView disable="true" fitHeight="45.0" fitWidth="49.0" layoutX="165.0" layoutY="494.0" opacity="0.5" preserveRatio="true">
+      <Image url="@../images/icons/pw.png" />
+   </ImageView>
+   <Hyperlink layoutX="622.0" layoutY="630.0" onAction="#hyperForgotPasswordOnAction" text="Forgot Password?" textAlignment="RIGHT" textFill="#686060">
+      <font>
+         <Font name="DejaVu Sans Bold" size="13.0" />
+      </font>
+   </Hyperlink>
+   <Hyperlink layoutX="459.0" layoutY="829.0" lineSpacing="5.0" onAction="#hyperCreateNewAccountOnAction" text="Create a new account" textFill="#686060" underline="true">
+      <font>
+         <Font name="DejaVu Sans Bold" size="16.0" />
+      </font>
+   </Hyperlink>
+   <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#2148ff00" height="60.0" layoutX="81.0" layoutY="294.0" stroke="#594930bf" strokeType="INSIDE" strokeWidth="2.0" width="610.0" AnchorPane.leftAnchor="154.0" AnchorPane.topAnchor="387.0" />
+   <TextField fx:id="txtUsername" layoutX="163.0" layoutY="387.0" onAction="#txtUsernameOnAction" prefHeight="60.0" prefWidth="560.0" promptText="Username" style="-fx-background-color: trans;" AnchorPane.leftAnchor="179.0" AnchorPane.topAnchor="387.0">
+      <font>
+         <Font name="DejaVu Sans Bold" size="20.0" />
+      </font>
+      <effect>
+         <InnerShadow>
+            <color>
+               <Color red="0.6705882549285889" green="0.6078431606292725" blue="0.3686274588108063" opacity="0.9200000166893005" />
+            </color>
+         </InnerShadow>
+      </effect>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+      <opaqueInsets>
+         <Insets left="5.0" right="5.0" />
+      </opaqueInsets>
+   </TextField>
+   <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#2148ff00" height="60.0" layoutX="91.0" layoutY="304.0" stroke="#594930bf" strokeType="INSIDE" strokeWidth="2.0" width="610.0" AnchorPane.leftAnchor="154.0" AnchorPane.topAnchor="550.0" />
+   <PasswordField fx:id="txtPassword" layoutX="154.0" layoutY="550.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#txtPasswordOnAction" prefHeight="60.0" prefWidth="560.0" promptText="Password" style="-fx-background-color: trans;" AnchorPane.leftAnchor="179.0" AnchorPane.topAnchor="550.0">
+      <font>
+         <Font name="DejaVu Sans Bold" size="20.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+      <effect>
+         <InnerShadow>
+            <color>
+               <Color red="0.6705882549285889" green="0.6039215922355652" blue="0.3686274588108063" opacity="0.9200000166893005" />
+            </color>
+         </InnerShadow>
+      </effect>
+   </PasswordField>
+</AnchorPane>

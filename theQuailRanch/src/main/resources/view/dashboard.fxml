@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" prefHeight="1024.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.theQuailRanch.controller.DashboardController">
+   <children>
+      <ImageView fitHeight="1024.0" fitWidth="1440.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../images/pages/DashboardDashboard.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="240.0" onAction="#btnRegisterOnAction" prefHeight="75.0" prefWidth="390.0" style="-fx-background-color: #d3b688;" text="REGISTER" textFill="#573c13">
+         <font>
+            <Font name="DejaVu Serif Bold" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+         <graphic>
+            <ImageView opacity="0.75">
+               <image>
+                  <Image url="@../images/icons/Register.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="390.0" onAction="#btnStockOnAction" prefHeight="75.0" prefWidth="390.0" style="-fx-background-color: #d3b688;" text="STOCK" textFill="#573c13">
+         <font>
+            <Font name="DejaVu Serif Bold" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+         <graphic>
+            <ImageView opacity="0.75">
+               <image>
+                  <Image url="@../images/icons/stock.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="540.0" onAction="#btnOrderOnAction" prefHeight="75.0" prefWidth="390.0" style="-fx-background-color: #d3b688;" text="ORDER" textFill="#573c13">
+         <font>
+            <Font name="DejaVu Serif Bold" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+         <graphic>
+            <ImageView opacity="0.75">
+               <image>
+                  <Image url="@../images/icons/Order.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="690.0" onAction="#btnWSOnAction" prefHeight="75.0" prefWidth="390.0" style="-fx-background-color: #d3b688;" text="WORKSPACE" textFill="#573c13">
+         <font>
+            <Font name="DejaVu Serif Bold" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="46.0" opacity="0.75">
+               <image>
+                  <Image url="@../images/icons/farm.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="840.0" onAction="#btnUserOnAction" prefHeight="75.0" prefWidth="390.0" style="-fx-background-color: #d3b688;" text="USER" textFill="#573c13">
+         <font>
+            <Font name="DejaVu Serif Bold" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+         <graphic>
+            <ImageView opacity="0.75">
+               <image>
+                  <Image url="@../images/icons/UserNew.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="36.0" fitWidth="34.0" layoutX="1041.0" layoutY="47.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons/search.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="1337.0" layoutY="34.0" onAction="#btnLogoutOnAction" prefHeight="58.0" prefWidth="60.0" textFill="#3c3832">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+         <font>
+            <Font name="DejaVu Serif Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView opacity="0.75">
+               <image>
+                  <Image url="@../images/icons/logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label fx:id="lblWelcomeNote" alignment="CENTER" contentDisplay="CENTER" layoutX="1098.0" layoutY="104.0" prefHeight="48.0" prefWidth="307.0" textFill="#573c13">
+         <font>
+            <Font name="DejaVu Sans Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblCurrentDate" alignment="CENTER" contentDisplay="CENTER" layoutX="1105.0" layoutY="131.0" prefHeight="48.0" prefWidth="264.0" textFill="#573c13">
+         <font>
+            <Font name="DejaVu Sans Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" prefHeight="1024.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.theQuailRanch.controller.StockWindowController">
+    <children>
+        <ImageView fitHeight="1024.0" fitWidth="1440.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../images/pages/DPPage2.png" />
+            </image>
+        </ImageView>
+        <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="240.0" onAction="#btnRegisterOnAction" prefHeight="75.0" prefWidth="390.0" style="-fx-background-color: #d3b688;" text="REGISTER" textFill="#573c13">
+            <font>
+                <Font name="DejaVu Serif Bold" size="30.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <Blend />
+            </effect>
+            <graphic>
+                <ImageView opacity="0.75">
+                    <image>
+                        <Image url="@../images/icons/Register.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="390.0" onAction="#btnStockOnAction" prefHeight="75.0" prefWidth="390.0" style="-fx-background-color: #d3b688;" text="STOCK" textFill="#573c13">
+            <font>
+                <Font name="DejaVu Serif Bold" size="30.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <Blend />
+            </effect>
+            <graphic>
+                <ImageView opacity="0.75">
+                    <image>
+                        <Image url="@../images/icons/stock.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="540.0" onAction="#btnOrderOnAction" prefHeight="75.0" prefWidth="390.0" style="-fx-background-color: #d3b688;" text="ORDER" textFill="#573c13">
+            <font>
+                <Font name="DejaVu Serif Bold" size="30.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <Blend />
+            </effect>
+            <graphic>
+                <ImageView opacity="0.75">
+                    <image>
+                        <Image url="@../images/icons/Order.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="690.0" onAction="#btnWSOnAction" prefHeight="75.0" prefWidth="390.0" style="-fx-background-color: #d3b688;" text="WORKSPACE" textFill="#573c13">
+            <font>
+                <Font name="DejaVu Serif Bold" size="30.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <Blend />
+            </effect>
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="46.0" opacity="0.75">
+               <image>
+                  <Image url="@../images/icons/farm.png" />
+               </image>
+            </ImageView>
+         </graphic>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="840.0" onAction="#btnUserOnAction" prefHeight="75.0" prefWidth="390.0" style="-fx-background-color: #d3b688;" text="USER" textFill="#573c13">
+            <font>
+                <Font name="DejaVu Serif Bold" size="30.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <Blend />
+            </effect>
+            <graphic>
+                <ImageView opacity="0.75">
+                    <image>
+                        <Image url="@../images/icons/UserNew.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="585.0" layoutY="525.0" onAction="#btnFarmStockOnAction" opacity="0.9" prefHeight="150.0" prefWidth="450.0" style="-fx-background-color: c3a657;" text="In-farm Stock Management" textAlignment="JUSTIFY" textFill="#362f2f">
+            <font>
+                <Font name="Ubuntu Medium" size="20.0" />
+            </font>
+            <effect>
+                <Blend />
+            </effect>
+         <graphic>
+            <ImageView fitHeight="135.0" fitWidth="135.0">
+               <image>
+                  <Image url="@../images/icons/infarmStock.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+        <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="585.0" layoutY="255.0" onAction="#btnSellStockOnAction" opacity="0.9" prefHeight="150.0" prefWidth="450.0" style="-fx-background-color: c3a657;" text="Sell Stock Management" textAlignment="JUSTIFY" textFill="#362f2f">
+            <font>
+                <Font name="Ubuntu Medium" size="20.0" />
+            </font>
+            <effect>
+                <Blend />
+            </effect>
+         <graphic>
+            <ImageView fitHeight="135.0" fitWidth="135.0">
+               <image>
+                  <Image url="@../images/icons/sellStock.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+        <JFXButton layoutX="1255.0" layoutY="898.0" onAction="#btnBackOnAction" prefHeight="70.0" prefWidth="84.0">
+            <graphic>
+                <ImageView fitHeight="91.0" fitWidth="98.0" opacity="0.75">
+                    <image>
+                        <Image url="@../images/icons/back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <effect>
+            <BoxBlur />
+         </effect>
+        </JFXButton>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#2197ff00" height="150.0" layoutX="1090.0" layoutY="258.0" stroke="#ae9146" strokeWidth="5.0" width="200.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1091.0" layoutY="279.0" prefHeight="56.0" prefWidth="200.0" text="Sell Stock ">
+         <font>
+            <Font name="Ubuntu Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1091.0" layoutY="304.0" prefHeight="56.0" prefWidth="200.0" text="Count :">
+         <font>
+            <Font name="Ubuntu Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSellStockCount" alignment="CENTER" layoutX="1100.0" layoutY="340.0" prefHeight="42.0" prefWidth="181.0" textFill="#862b2b">
+         <font>
+            <Font name="Ubuntu Medium" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#2197ff00" height="150.0" layoutX="1090.0" layoutY="525.0" stroke="#ae9146" strokeWidth="5.0" width="200.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1090.0" layoutY="546.0" prefHeight="56.0" prefWidth="200.0" text="In-farm Stock">
+         <font>
+            <Font name="Ubuntu Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1090.0" layoutY="571.0" prefHeight="56.0" prefWidth="200.0" text="Count :">
+         <font>
+            <Font name="Ubuntu Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFarmStockCount" alignment="CENTER" layoutX="1099.0" layoutY="607.0" prefHeight="42.0" prefWidth="181.0" textFill="#862b2b">
+         <font>
+            <Font name="Ubuntu Medium" size="20.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

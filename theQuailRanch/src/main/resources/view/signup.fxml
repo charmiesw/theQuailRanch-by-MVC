@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" prefHeight="1024.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.theQuailRanch.controller.SignupFormController">
+   <children>
+      <ImageView fitHeight="1024.0" fitWidth="1440.0" layoutX="28.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../images/pages/SignupSignup.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="116.0" layoutY="711.0" onAction="#btnSignupOnAction" prefHeight="65.0" prefWidth="675.0" style="-fx-background-color: #d3b688;" text="SIGNUP" textFill="#835c21">
+         <font>
+            <Font name="DejaVu Sans Bold" size="26.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="45.0" fitWidth="49.0" layoutX="479.0" layoutY="378.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="49.0" layoutX="479.0" layoutY="514.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons/pw.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="49.0" layoutX="75.0" layoutY="378.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons/id.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="49.0" layoutX="75.0" layoutY="514.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons/tel.png" />
+         </image>
+      </ImageView>
+      <Hyperlink layoutX="478.0" layoutY="828.0" lineSpacing="5.0" onAction="#hyperLoginOnAction" text="Login" textFill="#686060" underline="true">
+         <font>
+            <Font name="DejaVu Sans Bold" size="16.0" />
+         </font>
+      </Hyperlink>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1f93ff00" height="60.0" layoutX="67.0" layoutY="427.0" stroke="#57472fbf" strokeType="INSIDE" strokeWidth="2.0" width="383.0" AnchorPane.leftAnchor="67.0" AnchorPane.topAnchor="427.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1f93ff00" height="60.0" layoutX="470.0" layoutY="565.0" stroke="#57472fbf" strokeType="INSIDE" strokeWidth="2.0" width="383.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1f93ff00" height="60.0" layoutX="67.0" layoutY="565.0" stroke="#57472fbf" strokeType="INSIDE" strokeWidth="2.0" width="383.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1f93ff00" height="60.0" layoutX="470.0" layoutY="427.0" stroke="#57472fbf" strokeType="INSIDE" strokeWidth="2.0" width="383.0" />
+      <TextField fx:id="txtUsername" layoutX="475.0" layoutY="427.0" onAction="#txtUsernameOnAction" prefHeight="60.0" prefWidth="373.0" promptText="Name" style="-fx-background-color: trans;">
+         <font>
+            <Font name="DejaVu Sans Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.6705882549285889" green="0.5960784554481506" blue="0.3686274588108063" opacity="0.9200000166893005" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <TextField fx:id="txtTel" layoutX="72.0" layoutY="565.0" onAction="#txtTelOnAction" prefHeight="60.0" prefWidth="373.0" promptText="Telephone" style="-fx-background-color: trans;">
+         <font>
+            <Font name="DejaVu Sans Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.6705882549285889" green="0.5960784554481506" blue="0.3686274588108063" opacity="0.9200000166893005" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <TextField fx:id="txtPassword" layoutX="475.0" layoutY="565.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#txtPasswordOnAction" prefHeight="60.0" prefWidth="373.0" promptText="Password" style="-fx-background-color: trans;">
+         <font>
+            <Font name="DejaVu Sans Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.6700000166893005" green="0.5946249961853027" blue="0.3684999942779541" opacity="0.9200000166893005" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <Label fx:id="lblUserId" layoutX="80.0" layoutY="439.0" prefHeight="34.0" prefWidth="65.0">
+         <font>
+            <Font name="DejaVu Sans Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.6700000166893005" green="0.5946249961853027" blue="0.3684999942779541" opacity="0.9200000166893005" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

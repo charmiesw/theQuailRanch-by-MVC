@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" prefHeight="1024.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.theQuailRanch.controller.UserFormController">
+    <children>
+      <ImageView fitHeight="1024.0" fitWidth="1440.0" layoutX="51.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../images/pages/PPUser.png" />
+         </image>
+      </ImageView>
+        <Label layoutX="75.0" layoutY="243.0" prefHeight="40.0" prefWidth="100.0" text="User Id" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="75.0" layoutY="393.0" prefHeight="40.0" prefWidth="83.0" text="Name" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="75.0" layoutY="543.0" prefHeight="40.0" prefWidth="152.0" text="Password" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tblUser" layoutX="834.0" layoutY="195.0" opacity="0.75" prefHeight="662.0" prefWidth="512.0" style="-fx-background-color: c6bcbc;">
+            <columns>
+                <TableColumn fx:id="colId" minWidth="0.0" prefWidth="94.0" text="User Id" />
+                <TableColumn fx:id="colUsername" minWidth="0.0" prefWidth="177.0" text="Name" />
+            <TableColumn fx:id="colPassword" prefWidth="138.0" text="Password" />
+            <TableColumn fx:id="colTel" minWidth="0.0" prefWidth="102.0" text="Contact No" />
+            </columns>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+        </TableView>
+      <Label layoutX="74.0" layoutY="683.0" prefHeight="40.0" prefWidth="60.0" text="Tel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1f93ff00" height="60.0" layoutX="75.0" layoutY="293.0" stroke="WHITE" strokeType="INSIDE" width="690.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </Rectangle>
+      <TextField fx:id="txtId" layoutX="100.0" layoutY="293.0" onAction="#txtSearchOnAction" prefHeight="60.0" prefWidth="635.0" style="-fx-background-color: trans;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.6700000166893005" green="0.5946249961853027" blue="0.3684999942779541" opacity="0.9200000166893005" />
+               </color></InnerShadow>
+         </effect>
+      </TextField>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1f93ff00" height="60.0" layoutX="75.0" layoutY="443.0" stroke="WHITE" strokeType="INSIDE" width="690.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </Rectangle>
+      <TextField fx:id="txtUsername" layoutX="100.0" layoutY="443.0" onAction="#txtUsernameOnAction" prefHeight="60.0" prefWidth="635.0" style="-fx-background-color: trans;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.6700000166893005" green="0.5946249961853027" blue="0.3684999942779541" opacity="0.9200000166893005" />
+               </color></InnerShadow>
+         </effect>
+      </TextField>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1f93ff00" height="60.0" layoutX="75.0" layoutY="593.0" stroke="WHITE" strokeType="INSIDE" width="690.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </Rectangle>
+      <TextField fx:id="txtPassword" layoutX="100.0" layoutY="593.0" onAction="#txtPasswordOnAction" prefHeight="60.0" prefWidth="635.0" style="-fx-background-color: trans;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.6700000166893005" green="0.5946249961853027" blue="0.3684999942779541" opacity="0.9200000166893005" />
+               </color></InnerShadow>
+         </effect>
+      </TextField>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1f93ff00" height="60.0" layoutX="75.0" layoutY="733.0" stroke="WHITE" strokeType="INSIDE" width="690.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </Rectangle>
+      <TextField fx:id="txtTel" layoutX="100.0" layoutY="733.0" onAction="#txtTelOnAction" prefHeight="60.0" prefWidth="635.0" style="-fx-background-color: trans;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.6700000166893005" green="0.5946249961853027" blue="0.3684999942779541" opacity="0.9200000166893005" />
+               </color></InnerShadow>
+         </effect>
+      </TextField>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="190.0" layoutY="857.0" onAction="#btnSaveOnAction" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: D2B37D;" text="SAVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="510.0" layoutY="857.0" onAction="#btnUpdateOnAction" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: D2B37D;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="350.0" layoutY="857.0" onAction="#btnDeleteOnAction" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: D2B37D;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="670.0" layoutY="857.0" onAction="#btnClearOnAction" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: D2B37D;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1263.0" layoutY="888.0" onAction="#btnBackOnAction" opacity="0.75" prefHeight="103.0" prefWidth="135.0" textFill="TRANSPARENT">
+         <graphic>
+            <ImageView fitHeight="82.0" fitWidth="100.0">
+               <image>
+                  <Image url="@../images/icons/back.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+    </children>
+</AnchorPane>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" prefHeight="1024.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.theQuailRanch.controller.SalaryFormController">
+    <children>
+        <ImageView fitHeight="1024.0" fitWidth="1440.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../images/pages/PPSalary.png" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1f93ff00" height="60.0" layoutX="75.0" layoutY="300.0" stroke="WHITE" strokeType="INSIDE" width="690.0">
+            <effect>
+                <Blend />
+            </effect>
+        </Rectangle>
+        <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1f93ff00" height="60.0" layoutX="75.0" layoutY="450.0" stroke="WHITE" strokeType="INSIDE" width="690.0">
+            <effect>
+                <Blend />
+            </effect>
+        </Rectangle>
+        <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1f93ff00" height="60.0" layoutX="75.0" layoutY="823.0" stroke="WHITE" strokeType="INSIDE" width="690.0">
+            <effect>
+                <Blend />
+            </effect>
+        </Rectangle>
+        <Label layoutX="75.0" layoutY="250.0" prefHeight="40.0" prefWidth="152.0" text="Salary Id" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="75.0" layoutY="400.0" prefHeight="40.0" prefWidth="184.0" text="Employee id" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="75.0" layoutY="623.0" prefHeight="40.0" prefWidth="137.0" text="Paid date" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <JFXButton buttonType="RAISED" layoutX="1263.0" layoutY="888.0" onAction="#btnBackOnAction" opacity="0.75" prefHeight="103.0" prefWidth="135.0" textFill="TRANSPARENT">
+            <graphic>
+                <ImageView fitHeight="82.0" fitWidth="100.0">
+                    <image>
+                        <Image url="@../images/icons/back.png" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <effect>
+                        <Blend />
+                    </effect>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <TextField layoutX="103.0" layoutY="450.0" prefHeight="60.0" prefWidth="635.0" style="-fx-background-color: trans;">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+            <font>
+                <Font size="15.0" />
+            </font></TextField>
+        <TextField fx:id="txtAmount" layoutX="104.0" layoutY="823.0" onAction="#txtAmountOnAction" prefHeight="60.0" prefWidth="635.0" style="-fx-background-color: trans;">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.6700000166893005" green="0.5946249961853027" blue="0.3684999942779541" opacity="0.9200000166893005" />
+               </color></InnerShadow>
+         </effect></TextField>
+        <TextField fx:id="txtSalId" layoutX="100.0" layoutY="300.0" onAction="#txtSearchOnAction" prefHeight="60.0" prefWidth="635.0" style="-fx-background-color: trans;">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.6700000166893005" green="0.5946249961853027" blue="0.3684999942779541" opacity="0.9200000166893005" />
+               </color></InnerShadow>
+         </effect></TextField>
+      <VBox layoutX="973.0" layoutY="229.0" prefHeight="577.0" prefWidth="279.0" spacing="75.0">
+         <children>
+              <JFXButton buttonType="RAISED" contentDisplay="RIGHT" onAction="#btnSaveOnAction" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: D2B37D;" text="SAVE" textFill="WHITE">
+                  <font>
+                      <Font name="System Bold" size="18.0" />
+                  </font>
+                  <cursor>
+                      <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <effect>
+                      <Blend />
+                  </effect>
+              </JFXButton>
+              <JFXButton buttonType="RAISED" contentDisplay="RIGHT" onAction="#btnUpdateOnAction" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: D2B37D;" text="UPDATE" textFill="WHITE">
+                  <font>
+                      <Font name="System Bold" size="18.0" />
+                  </font>
+                  <cursor>
+                      <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <effect>
+                      <Blend />
+                  </effect>
+              </JFXButton>
+              <JFXButton buttonType="RAISED" contentDisplay="RIGHT" onAction="#btnDeleteOnAction" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: D2B37D;" text="DELETE" textFill="WHITE">
+                  <font>
+                      <Font name="System Bold" size="18.0" />
+                  </font>
+                  <cursor>
+                      <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <effect>
+                      <Blend />
+                  </effect>
+              </JFXButton>
+              <JFXButton buttonType="RAISED" contentDisplay="RIGHT" onAction="#btnClearOnAction" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: D2B37D;" text="CLEAR" textFill="WHITE">
+                  <font>
+                      <Font name="System Bold" size="18.0" />
+                  </font>
+                  <cursor>
+                      <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <effect>
+                      <Blend />
+                  </effect>
+              </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="RIGHT" onAction="#btnReportOnAction" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: D2B37D;" text="REPORT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Label layoutX="75.0" layoutY="773.0" prefHeight="40.0" prefWidth="137.0" text="Amount" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbEmployeeId" layoutX="102.0" layoutY="448.0" onAction="#cmbEmployeeIdOnAction" prefHeight="60.0" prefWidth="635.0">
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.6700000166893005" green="0.5946249961853027" blue="0.3684999942779541" opacity="0.9200000166893005" />
+               </color></InnerShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></JFXComboBox>
+      <DatePicker fx:id="txtDate" layoutX="75.0" layoutY="673.0" onAction="#txtDateOnAction" opacity="0.8" prefHeight="60.0" prefWidth="690.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.6700000166893005" green="0.5946249961853027" blue="0.3684999942779541" opacity="0.9200000166893005" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </DatePicker>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1f93ff00" height="60.0" layoutX="73.0" layoutY="523.0" stroke="WHITE" strokeType="INSIDE" width="690.0">
+         <effect>
+            <Blend />
+         </effect>
+      </Rectangle>
+      <Label fx:id="lblEmployeeName" layoutX="98.0" layoutY="523.0" prefHeight="60.0" prefWidth="635.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.6700000166893005" green="0.5946249961853027" blue="0.3684999942779541" opacity="0.9200000166893005" />
+               </color></InnerShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Label>
+    </children>
+</AnchorPane>
