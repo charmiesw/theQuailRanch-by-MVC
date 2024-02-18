@@ -223,7 +223,7 @@ public class MaintenanceFormController {
     @FXML
     void btnReportOnAction(ActionEvent actionEvent) throws SQLException  {
         try {
-            JasperDesign jasperDesign = JRXmlLoader.load("/home/charmie/IdeaProjects/theQuailRanch/src/main/resources/report/TQR_MaintenanceReport.jrxml");
+            JasperDesign jasperDesign = JRXmlLoader.load("/home/charmie/Desktop/AviaryPulse/CODE/LAYERED/The Quail Ranch/theQuailRanch/src/main/resources/report/TQR_MaintenanceReport.jrxml");
             JRDesignQuery query = new JRDesignQuery();
 
             query.setText("SELECT c.tt_id, n.nest_id, e.emp_id, e.name, c.date FROM Nests n JOIN Cleaning_tt c ON n.nest_id = c.nest_id JOIN Employee e ON e.emp_id = c.emp_id");

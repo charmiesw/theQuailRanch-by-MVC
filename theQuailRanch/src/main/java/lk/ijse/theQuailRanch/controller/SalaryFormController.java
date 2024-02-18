@@ -208,7 +208,7 @@ public class SalaryFormController {
     @FXML
     void btnReportOnAction(ActionEvent actionEvent) throws SQLException {
         try {
-            JasperDesign jasperDesign = JRXmlLoader.load("/home/charmie/IdeaProjects/theQuailRanch/src/main/resources/report/TQR_SalaryReport.jrxml");
+            JasperDesign jasperDesign = JRXmlLoader.load("/home/charmie/Desktop/AviaryPulse/CODE/LAYERED/The Quail Ranch/theQuailRanch/src/main/resources/report/TQR_SalaryReport.jrxml");
             JRDesignQuery query = new JRDesignQuery();
             query.setText("SELECT s.sal_id, s.amount, s.paid_date, e.emp_id, e.name FROM Salary s JOIN Employee e ON s.emp_id = e.emp_id");
             jasperDesign.setQuery(query);
